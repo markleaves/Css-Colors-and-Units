@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Css-Colors and Units</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+h1{
+text-align: center;
+color: BLUE;
+margin: 40px;
+}
+h2{
+color:  skyblue;
+}
+body{
+
+padding: 40px;
+}
+
+.units{
+text-align: center;
+text-shadow: 2px 2px black;
+color: red;
+box-shadow: 3px 3px 2px 5px pink;
+}
+
+.absolute {
+padding: 40px;
+box-shadow: 3px 2px 5px 3px green;
+}
+
+.Relative{
+padding: 40px;
+box-shadow: 2px 11px 14px 12px hotpink inset;
+}
+
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+
+#grad2 {
+  height: 300px;
+  width: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad3 {
+  height: 400px;
+  width: 800px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green);
+}
+</style>
+
+<h1>CSS Colors</h1>
+
+<h2>CSS Color Names</h2>
+
+<h2>CSS background Color </h2>
+
+<h1 style="background-color:Tomato;">background-color:Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+
+<h2>CSS font-Color </h2>
+
+<h3 style="color:Tomato;">Hello Guys Welcome to Great Karikalan Magic Show!!!!!!</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<h1>CSS RGB Colors</h1>
+
+<pre style="font-size: 22px;">
+An RGB color value represents RED, GREEN, and BLUE light sources.
+
+RGB Value
+In CSS, a color can be specified as an RGB value, using this formula:
+
+rgb(red, green, blue)
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) 
+and the others are set to 0.
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+</pre>
+
+
+<h1>Specify colors using RGB values</h1>
+
+<h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2>
+<h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2>
+<h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2>
+<h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2>
+<h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2>
+<h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2>
+
+<h1>Make transparent colors with RGBA</h1>
+
+<pre style="font-size: 24px;">
+RGBA Value
+RGBA color values are an extension of RGB color values with an alpha channel 
+ which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) 
+and 1.0 (not transparent at all):</pre>
+
+<h2 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h2>
+<h2 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h2>
+<h2 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h2>
+<h2 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h2>
+<h2 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h2>
+<h2 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h2>
+
+<h1>CSS HEX Colors</h1>
+
+<pre  style="font-size: 24px;">A hexadecimal color is specified with: 
+
+#RRGGBB, where the RR (red), GG (green) and BB (blue) 
+hexadecimal integers specify the components of the color.</pre>
+
+<pre  style="font-size: 24px;">
+HEX Value
+In CSS, a color can be specified using a hexadecimal value in the form:
+
+#rrggbb
+
+Where rr (red), gg (green) and bb (blue) are hexadecimal
+
+ values between 00 and ff (same as decimal 0-255).
+
+For example, #ff0000 is displayed as red, because red is set to 
+
+its highest value (ff) and the others are set to the lowest value (00).
+
+To display black, set all values to 00, like this: #000000.
+
+To display white, set all values to ff, like this: #ffffff.  
+</pre>
+
+<h1>Specify colors using HEX values</h1>
+
+<h2 style="background-color:#ff0000;">#ff0000</h2>
+<h2 style="background-color:#0000ff;">#0000ff</h2>
+<h2 style="background-color:#3cb371;">#3cb371</h2>
+<h2 style="background-color:#ee82ee;">#ee82ee</h2>
+<h2 style="background-color:#ffa500;">#ffa500</h2>
+<h2 style="background-color:#6a5acd;">#6a5acd</h2>
+
+<h1>CSS HSL Colors</h1>
+
+<pre style="font-size: 23px;">HSL Value
+In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+hsl(hue, saturation, lightness)
+
+Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+
+Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white</pre>
+
+<h1>Specify colors using HSL values</h1>
+
+<h2 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h2>
+<h2 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h2>
+<h2 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h2>
+<h2 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h2>
+<h2 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h2>
+<h2 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h2>
+
+<h1>CSS Gradients</h1>
+<h1> usnig background-image: property </h1>
+<pre style="font-size: 23px;">
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+Conic Gradients (rotated around a center point)
+</pre>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+<div id="grad1"></div>
+
+
+<h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+<div id="grad2"></div>
+
+<h1>Conic Gradient - Three Colors</h1>
+
+<div id="grad3"></div>
+
+<h1 class="units">CSS Units</h1>
+
+<h1>Absolute Lengths</h1>
+
+<pre class="absolute" style="font-size: 23px;">
+
+Unit	Description
+
+cm	centimeters
+
+mm	millimeters
+
+in	inches (1in = 96px = 2.54cm)
+
+px *	pixels (1px = 1/96th of 1in)
+
+pt	points (1pt = 1/72 of 1in)
+
+pc	picas (1pc = 12 pt)</pre>
+
+
+<h1>Relative Lengths</h1>
+
+<pre class="Relative" style="font-size: 23px;">
+
+Unit	Description	
+
+em	Relative to the font-size of the element (2em means 2 times the size of current font)
+	
+ex	Relative to the x-height of the current font (rarely used)	
+
+ch	Relative to width of the "0" (zero)	
+
+rem	Relative to font-size of the root element	
+
+vw	Relative to 1% of the width of the viewport*	
+
+vh	Relative to 1% of the height of the viewport*
+	
+vmin	Relative to 1% of viewport's* smaller dimension	
+
+vmax	Relative to 1% of viewport's* larger dimension
+	
+%	Relative to the parent element</pre>
+
+</body>
+</html>
